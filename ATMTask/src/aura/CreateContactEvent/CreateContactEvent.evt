@@ -1,0 +1,8 @@
+<!--
+ - Created by user on 06-Sep-19.
+ -->
+
+<aura:event type="APPLICATION" description="CreateContactEvent">
+    <aura:attribute name="message" type="String"/>
+    <aura:attribute name="title" type="String"/>
+</aura:event>

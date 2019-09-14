@@ -1,0 +1,12 @@
+<apex:page controller="OpportunityController">
+  <apex:form >
+    <apex:pageBlock >
+      <apex:pageBlockTable value="{!opportunitiesOne}" var="opp" width="700">
+         <apex:column title="Closed Won" value="{!opp.Name}"/>
+       </apex:pageBlockTable>
+       <apex:pageBlockTable value="{!opportunitiesTwo}" var="oppTwo" width="700">
+          <apex:column title="Closed Lost" value="{!oppTwo.Name}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+   </apex:form>
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page controller="DoctorController" docType="html-5.0">
+    <apex:form >
+        <apex:pageBlock title="Doctor edit">
+            <apex:messages />
+            <apex:pageBlockSection >
+                <apex:inputField value="{!doctor.Name}"/>
+            </apex:pageBlockSection> 
+            <apex:pageBlockSection >
+                <apex:inputField value="{!doctor.Working_Hours_Start__c}"/>
+            </apex:pageBlockSection> 
+            <apex:pageBlockSection >
+                <apex:inputField value="{!doctor.Working_Hours_End__c}"/>
+            </apex:pageBlockSection> 
+            <apex:pageBlockSection > 
+                
+                <apex:commandButton value="Save" action="{!addDoctor}"/> 
+                <apex:commandButton value="Cancel" action="{!Cancel}"/>  
+                
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form> 
+</apex:page>
