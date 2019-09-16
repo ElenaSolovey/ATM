@@ -1,0 +1,46 @@
+<aura:component description="Card_ATM_Component" controller="Card_ATM_Controller" implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="cards" type="Card__c[]"/>
+    <aura:attribute name="atmId" type="String"/>
+    <aura:attribute name="atm" type="Cash_Machine__c"/>
+<!--    <aura:attribute name="accountId" type="String" default="0012v00002UGChuAAH" />-->
+
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
+        <thead>
+        <tr class="slds-text-heading_label">
+            <th scope="col">
+                <div class="slds-truncate" title="ID">ID</div>
+            </th>
+            <th scope="col">
+                <div class="slds-truncate" title="Name">Name</div>
+            </th>
+            <th scope="col">
+                <div class="slds-truncate" title="Category">Bank</div>
+            </th>
+            <th scope="col">
+                <div class="slds-truncate" title="AddInBasket">Withdraw</div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.cards}" var="card">
+                <tr>
+                    <td scope="col" title="{!card.Id}"><div>{!card.Id}</div></td>
+                    <td scope="col"><div title="{!card.Name}">{!card.Name}</div></td>
+                    <td scope="col"><div title="{!card.Bank__r.Name}">{!card.Bank__r.Name}</div></td>
+                    <td>
+                        <div>
+                            <lightning:button
+                                    label = "Withdraw"
+                                    value = "{!card}"
+                                    iconName = "utility:new"
+                                    variant = "neutral"
+                                    disabled = "false"/>
+                        </div>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>
