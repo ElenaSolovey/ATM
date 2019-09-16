@@ -1,0 +1,7 @@
+<!--
+ - Created by user on 16-Sep-19.
+ -->
+
+<aura:event type="APPLICATION" description="AtmEvent">
+    <aura:attribute name="AtmId" type="String"/>
+</aura:event>
