@@ -11,10 +11,10 @@
         $A.enqueueAction(action);
     },
     withdrawMoney: function (component, atm) {
-        var atmId = component.get('v.atm.Id');
-        var attribute = component.set("v.Id" , atmId);
+
+        console.log(atm);
         let createEvent = $A.get("e.c:atmEvent");
-        createEvent.setParam({ "AtmId" : attribute});
+        createEvent.setParam({ "AtmId" : atm});
         createEvent.fire();
         component.destroy();
     }

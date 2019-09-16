@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="658ffc2c-a5a9-469a-9fda-9e059baabf3b" name="Default Changelist" comment="" />
+    <list default="true" id="658ffc2c-a5a9-469a-9fda-9e059baabf3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/ATM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATMController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATMController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATMHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATMHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/finalComponent/finalComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/finalComponent/finalComponentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Card_ATM_Controller.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Card_ATM_Controller.cls" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +36,9 @@
         <option value="Lightning Helper" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
@@ -48,14 +67,14 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="APEXCLASS:CARD_ATM_CONTROLLER" value="1568641364000" />
+                      <entry key="APEXCLASS:CARD_ATM_CONTROLLER" value="1568643537000" />
                       <entry key="APEXCLASS:EVERYDAYPERCENT" value="1568471324000" />
                       <entry key="APEXCLASS:LISTATMCONTROLLER" value="1568640576998" />
                       <entry key="AURADEFINITIONBUNDLE:ATM" value="1568632309000" />
                       <entry key="AURADEFINITIONBUNDLE:ATMEVENT" value="1568637412000" />
-                      <entry key="AURADEFINITIONBUNDLE:CARD_ATM_COMPONENT" value="1568641382008" />
-                      <entry key="AURADEFINITIONBUNDLE:FINALCOMPONENT" value="1568639657000" />
-                      <entry key="AURADEFINITIONBUNDLE:LISTATM" value="1568639482425" />
+                      <entry key="AURADEFINITIONBUNDLE:CARD_ATM_COMPONENT" value="1568645957000" />
+                      <entry key="AURADEFINITIONBUNDLE:FINALCOMPONENT" value="1568645956000" />
+                      <entry key="AURADEFINITIONBUNDLE:LISTATM" value="1568654611126" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -1062,10 +1081,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1QpDtLR1yE0lM9iGBPXIHcJ26sE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -1095,10 +1116,22 @@
       <workItem from="1568458936995" duration="8134000" />
       <workItem from="1568530655394" duration="27692000" />
       <workItem from="1568641074374" duration="793000" />
+      <workItem from="1568642330400" duration="6223000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

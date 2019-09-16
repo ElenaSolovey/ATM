@@ -10,4 +10,16 @@ public with sharing class Card_ATM_Controller {
         ];
         return cards;
     }
+    @AuraEnabled
+    public static Cash_Machine__c getATMById(String atmId) {
+        return [
+                SELECT
+                        Id,
+                        Name,
+                        Bank__r.Name,
+                        AmountOfMoney__c
+                FROM    Cash_Machine__c
+                WHERE   Id =: atmId
+        ];
+    }
 }

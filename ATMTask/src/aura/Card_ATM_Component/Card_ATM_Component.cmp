@@ -1,10 +1,14 @@
 <aura:component description="Card_ATM_Component" controller="Card_ATM_Controller" implements="flexipage:availableForAllPageTypes">
     <aura:attribute name="cards" type="Card__c[]"/>
     <aura:attribute name="atmId" type="String"/>
-    <aura:attribute name="atm" type="Cash_Machine__c"/>
+    <aura:attribute name="atm" type="Cash_Machine__c" default="{'sobjectType': 'Cash_Machine__c'}"/>
 <!--    <aura:attribute name="accountId" type="String" default="0012v00002UGChuAAH" />-->
 
     <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+<!--    <aura:handler value="{!this}" name="getATMInfo" action="{!c.getATMInfo}" />-->
+
+<!--    Bank of ATM: {!v.atm.Name}-->
+<!--    Amount of money: {!v.atm.AmountOfMoney__c}-->
 
     <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
         <thead>
