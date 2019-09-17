@@ -1,0 +1,31 @@
+<aura:component description="WithdrawMoneyComponent" controller="WithdrawMoneyController" implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="CardId" type="String"/>
+    <aura:attribute name="ATMId" type="String"/>
+    <aura:attribute name="card" type="Card__c" default="{'sobjectType': 'Card__c'}"/>
+
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+    <div class="back-ground">
+        <div class="form-to-popup">
+            Info about ATM:
+            Info about Card:
+<!--            <lightning:outputField fieldName="{!v.card.Name}" />-->
+<!--            <lightning:outputField fieldName="{!v.card.Cash__c}"/>-->
+<!--            <lightning:outputField fieldName="{!card.Type__c}"/>-->
+
+
+            <lightning:input label="Amount"
+                             value="{!v.card.Amount_to_withdraw__c}"
+                             placeholder="00.00"
+                             type="number"
+                             maxlength="18"
+                             messageWhenBadInput="Please, enter the number"/>
+            <lightning:button onclick="{!c.withdrawMoney}"
+                              variant="neutral"
+                              label="Withdraw"/>
+
+            <lightning:button onclick="{!c.closePopup}"
+                              variant="neutral"
+                              label="Close"/>
+        </div>
+    </div>
+</aura:component>

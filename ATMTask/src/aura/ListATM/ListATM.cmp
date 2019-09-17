@@ -1,8 +1,8 @@
 
 <aura:component description="ListATM" controller="ListATMController" implements="flexipage:availableForAllPageTypes">
-    <aura:registerEvent type="c:AtmEvent" name="AtmEvent"/>
     <aura:attribute name="listATM" type="Cash_Machine__c[]"/>
     <aura:attribute name="Id" type="String"/>
+    <aura:registerEvent type="c:AtmEvent" name="AtmEvent"/>
     <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
 
     <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">

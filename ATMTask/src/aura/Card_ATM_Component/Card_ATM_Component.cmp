@@ -37,7 +37,8 @@
                         <div>
                             <lightning:button
                                     label = "Withdraw"
-                                    value = "{!card}"
+                                    value = "{!card.Id}"
+                                    onclick="{!c.openCard}"
                                     iconName = "utility:new"
                                     variant = "neutral"
                                     disabled = "false"/>
@@ -47,4 +48,6 @@
             </aura:iteration>
         </tbody>
     </table>
+    <div aura:id="WithdrawMoneyComponent"
+         class="WithdrawMoneyComponent"/>
 </aura:component>

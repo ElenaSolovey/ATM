@@ -11,10 +11,9 @@
         $A.enqueueAction(action);
     },
     withdrawMoney: function (component, atm) {
-
-        console.log(atm);
-        let createEvent = $A.get("e.c:atmEvent");
-        createEvent.setParam({ "AtmId" : atm});
+        console.log('atm', atm);
+        let createEvent = $A.get("e.c:AtmEvent");
+        createEvent.setParams({ "AtmId" : atm});
         createEvent.fire();
         component.destroy();
     }

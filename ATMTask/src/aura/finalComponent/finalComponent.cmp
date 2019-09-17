@@ -1,8 +1,9 @@
 <aura:component description="finalComponent">
     <aura:handler event="c:AtmEvent" action="{!c.handlerATM}"/>
+    <aura:attribute name="Id" type="String"/>
     <aura:attribute type="Boolean" name="flagSelectATM" default="false"/>
     <c:ListATM />
     <aura:if isTrue="{!v.flagSelectATM}">
-        <c:Card_ATM_Component />
+        <c:Card_ATM_Component atmId="{!v.Id}"/>
     </aura:if>
 </aura:component>
