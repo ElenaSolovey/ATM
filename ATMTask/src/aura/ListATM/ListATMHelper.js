@@ -13,7 +13,7 @@
     withdrawMoney: function (component, atm) {
         console.log('atm', atm);
         let createEvent = $A.get("e.c:AtmEvent");
-        createEvent.setParams({ "AtmId" : atm});
+        createEvent.setParams({ "atm" : atm});
         createEvent.fire();
         component.destroy();
     }

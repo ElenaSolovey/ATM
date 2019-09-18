@@ -8,10 +8,12 @@
     },
     openCard: function (component, cardId) {
         console.log(cardId);
+        console.log(JSON.stringify(component.get('v.atm')));
         $A.createComponent(
             "c:WithdrawMoneyComponent",
             {
-                'CardId' : cardId
+                'CardId' : cardId,
+                'atm' : component.get('v.atm')
                 // 'ATMId' : component.get("v.atmId")
             },
             function(newComponent, status, errorMessage){
@@ -29,15 +31,4 @@
             }
         );
     }
-    // getATMInfo : function (component, event, helper) {
-    //     let action = component.get("c.getATMById");
-    //     let atmId = component.get("v.atmId");
-    //     action.setParams({
-    //         atmId: atmId
-    //     });
-    //     action.setCallback(this, function (response) {
-    //         action.set({"v.atm": response.getReturnValue()})
-    //     });
-    //     $A.enqueueAction(action);
-    // }
 });

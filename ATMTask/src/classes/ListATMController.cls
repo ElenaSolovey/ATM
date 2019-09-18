@@ -1,7 +1,3 @@
-/**
- * Created by user on 15-Sep-19.
- */
-
 public with sharing class ListATMController {
     @AuraEnabled
     public static List<Cash_Machine__c> getAtmList() {
@@ -9,14 +5,10 @@ public with sharing class ListATMController {
                                     SELECT Id,
                                            Name,
                                            Bank__r.Name,
+                                           AmountOfMoney__c,
                                            Bank__r.Commission__c
                                     FROM   Cash_Machine__c
         ];
         return a;
     }
-//    @AuraEnabled
-//    public static String withdrawMoney(){
-//       Cash_Machine__c atm = new Cash_Machine__c();
-//        return atm.Id;
-//    }
 }

@@ -2,30 +2,96 @@
     <aura:attribute name="CardId" type="String"/>
     <aura:attribute name="ATMId" type="String"/>
     <aura:attribute name="card" type="Card__c" default="{'sobjectType': 'Card__c'}"/>
-
+    <aura:attribute name="atm" type="Cash_Machine__c" default="{'sobjectType': 'Cash_Machine__c'}"/>
     <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
     <div class="back-ground">
         <div class="form-to-popup">
-            Info about ATM:
-            Info about Card:
-<!--            <lightning:outputField fieldName="{!v.card.Name}" />-->
-<!--            <lightning:outputField fieldName="{!v.card.Cash__c}"/>-->
-<!--            <lightning:outputField fieldName="{!card.Type__c}"/>-->
+            <lightning:layout class="slds-modal__header">
+                <lightning:layoutItem>
+                    <lightning:icon iconName="standard:user" alternativeText="My Account"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="horizontal-small">
+                    <div class="page-section page-header">
+                        <h1 class="slds-text-heading--label">Card</h1>
+                        <h2 class="slds-text-heading--medium">My Card</h2>
+                    </div>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <div class="slds-modal__content slds-p-around--medium">
+                <lightning:layoutItem >
+                    <form class="slds-form-element_stacked">
+                        <div class="slds-box slds-text-heading_small" id="atm">
+                                Info About ATM:
+                            <div>
+                                <lightning:layoutItem >
+                                     Name:
+                                     <ui:outputText title="Name" value="{!v.atm.Name}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem >
+                                    Bank Name:
+                                    <ui:outputText title="Bank Name" value="{!v.atm.Bank__r.Name}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem >
+                                    Commission(%):
+                                    <ui:outputText title="Commission" value="{!v.atm.Bank__r.Commission__c}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem >
+                                    Amount Of Money:
+                                    <ui:outputCurrency  value="{!v.atm.AmountOfMoney__c}"/>
+                                </lightning:layoutItem>
+                            </div>
+                        </div>
 
+                        <div class="slds-box slds-text-heading_small" id="card">
+                             Info about Card:
+                            <div>
+                                <lightning:layoutItem >
+                                    Name:
+                                    <ui:outputText title="Name: " value="{!v.card.Name}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem >
+                                    Type:
+                                    <ui:outputText title="Type: " value="{!v.card.Type__c}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem >
+                                    Bank Name:
+                                    <ui:outputText title="Bank name: " value="{!v.card.Bank__r.Name}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem >
+                                    Cash:
+                                    <ui:outputText title="Cash: " value="{!v.card.Cash__c}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem >
+                                    Money to Credit:
+                                    <ui:outputText title="Cash: " value="{!v.card.MoneyInCredit__c}"/>
+                                </lightning:layoutItem>
+                            </div>
+                        </div>
 
+                    </form>
+                </lightning:layoutItem>
+            </div>
             <lightning:input label="Amount"
                              value="{!v.card.Amount_to_withdraw__c}"
-                             placeholder="00.00"
+                             min="0"
+                             max="999999999999999"
                              type="number"
                              maxlength="18"
-                             messageWhenBadInput="Please, enter the number"/>
-            <lightning:button onclick="{!c.withdrawMoney}"
-                              variant="neutral"
-                              label="Withdraw"/>
-
-            <lightning:button onclick="{!c.closePopup}"
-                              variant="neutral"
-                              label="Close"/>
+                             messageWhenPatternMismatch="Please, enter the number"/>
+            <div class="buttonMoney">
+                <lightning:button
+                                   onclick="{!c.withdrawMoney}"
+                                   iconName="standard:proposition"
+                                   variant="neutral"
+                                   label="Withdraw"/>
+            </div>
+            <div class="buttonClose">
+                <lightning:button
+                                  onclick="{!c.closePopup}"
+                                  iconName="action:remove"
+                                  variant="neutral"
+                                  label="Close"/>
+            </div>
         </div>
     </div>
 </aura:component>

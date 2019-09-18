@@ -3,7 +3,7 @@
         helper.init(component);
     },
     openCard: function (component, event, helper) {
-        console.log('Id ATM', component.get('v.atmId'));
+        // console.log('ATM', component.get('v.atm'));
         console.log('Id Card',event.getSource().get('v.value'));
         helper.openCard(component, event.getSource().get('v.value'));
     }

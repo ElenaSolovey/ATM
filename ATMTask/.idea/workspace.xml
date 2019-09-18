@@ -2,15 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="658ffc2c-a5a9-469a-9fda-9e059baabf3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATM.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/MoneyToCardScheduler.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/MoneyToCardScheduler.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/CardUpdTrigger.trigger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/triggers/CardUpdTrigger.trigger-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/New_Connection/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/New_Connection/OfflineSymbolTable.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/AtmEvent/AtmEvent.evt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/AtmEvent/AtmEvent.evt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATMController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATMController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATMHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATMHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/finalComponent/finalComponent.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/finalComponent/finalComponent.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/finalComponent/finalComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/finalComponent/finalComponentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Card_ATM_Controller.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Card_ATM_Controller.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ListATMController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ListATMController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/WithdrawMoneyController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyController.cls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +41,10 @@
         <option value="Lightning Component" />
         <option value="Lightning Controller" />
         <option value="Lightning Helper" />
+        <option value="Lightning Style" />
+        <option value="Apex Trigger" />
         <option value="Apex Class" />
         <option value="Apex Metadata" />
-        <option value="Lightning Style" />
       </list>
     </option>
   </component>
@@ -52,7 +68,8 @@
         <option name="anonymousApexSettings">
           <AnonymousApexSettings>
             <option name="apexLogLevel" value="FINEST" />
-            <option name="documentText" value="SELECT Id ,Name ,Bank__r.Name,Cash__c FROM Card__c WHERE AccountId__c =: '0012v00002UGChuAAH'" />
+            <option name="documentText" value="MoneyToCardScheduler money = new MoneyToCardScheduler();&#10;String sch = '0 0 1 * * ?';&#10;string JobId = System.schedule('Add percent to money', sch, money);" />
+            <option name="splitterProportion" value="0.3896366" />
           </AnonymousApexSettings>
         </option>
         <option name="connectionWorkspaceSettings">
@@ -62,16 +79,18 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="APEXCLASS:CARD_ATM_CONTROLLER" value="1568643537000" />
+                      <entry key="APEXCLASS:CARD_ATM_CONTROLLER" value="1568805041772" />
                       <entry key="APEXCLASS:EVERYDAYPERCENT" value="1568471324000" />
-                      <entry key="APEXCLASS:LISTATMCONTROLLER" value="1568640576998" />
-                      <entry key="APEXCLASS:WITHDRAWMONEYCONTROLLER" value="1568663103316" />
+                      <entry key="APEXCLASS:LISTATMCONTROLLER" value="1568743346969" />
+                      <entry key="APEXCLASS:MONEYTOCARDSCHEDULER" value="1568804544000" />
+                      <entry key="APEXCLASS:WITHDRAWMONEYCONTROLLER" value="1568800680706" />
+                      <entry key="APEXTRIGGER:CARDUPDTRIGGER" value="1568800387000" />
                       <entry key="AURADEFINITIONBUNDLE:ATM" value="1568632309000" />
-                      <entry key="AURADEFINITIONBUNDLE:ATMEVENT" value="1568660436212" />
-                      <entry key="AURADEFINITIONBUNDLE:CARD_ATM_COMPONENT" value="1568665204970" />
-                      <entry key="AURADEFINITIONBUNDLE:FINALCOMPONENT" value="1568709560000" />
-                      <entry key="AURADEFINITIONBUNDLE:LISTATM" value="1568659636000" />
-                      <entry key="AURADEFINITIONBUNDLE:WITHDRAWMONEYCOMPONENT" value="1568709409000" />
+                      <entry key="AURADEFINITIONBUNDLE:ATMEVENT" value="1568713825000" />
+                      <entry key="AURADEFINITIONBUNDLE:CARD_ATM_COMPONENT" value="1568796085781" />
+                      <entry key="AURADEFINITIONBUNDLE:FINALCOMPONENT" value="1568713826000" />
+                      <entry key="AURADEFINITIONBUNDLE:LISTATM" value="1568796247020" />
+                      <entry key="AURADEFINITIONBUNDLE:WITHDRAWMONEYCOMPONENT" value="1568800667000" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -1074,6 +1093,13 @@
           </map>
         </option>
         <option name="retrieveAndMergeDefault" value="false" />
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="documentText" value="SELECT Id,&#10;        Name ,&#10;        Bank__r.Name,&#10;        Cash__c,&#10;        LastModifiedDate&#10;FROM   Card__c&#10;WHERE Id = 'a002v000047wbyqAAA'&#10;" />
+            <option name="resultsSplitterProportion" value="0.45251396" />
+            <option name="splitterProportion" value="0.5158184" />
+          </SoqlQuerySettings>
+        </option>
       </ProjectWorkspaceSettings>
     </option>
   </component>
@@ -1114,7 +1140,9 @@
       <workItem from="1568530655394" duration="27692000" />
       <workItem from="1568641074374" duration="793000" />
       <workItem from="1568642330400" duration="16385000" />
-      <workItem from="1568708513723" duration="1646000" />
+      <workItem from="1568708513723" duration="2800000" />
+      <workItem from="1568711456465" duration="33906000" />
+      <workItem from="1568797314708" duration="6976000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,4 @@
 <aura:event type="APPLICATION" description="AtmEvent">
-    <aura:attribute name="AtmId" type="String"/>
+<!--    <aura:attribute name="AtmId" type="String"/>-->
+    <aura:attribute name="atm" type="Cash_Machine__c"/>
 </aura:event>

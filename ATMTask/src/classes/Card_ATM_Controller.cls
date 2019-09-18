@@ -5,6 +5,8 @@ public with sharing class Card_ATM_Controller {
                                SELECT Id,
                                       Name ,
                                       Bank__r.Name,
+                                      Type__c,
+                                      Number__c,
                                       Cash__c
                                FROM   Card__c
         ];
