@@ -50,24 +50,31 @@
                                     <ui:outputText title="Name: " value="{!v.card.Name}"/>
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
+                                    Number:
+                                    <ui:outputText  value="{!v.card.Number__c}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem >
                                     Type:
-                                    <ui:outputText title="Type: " value="{!v.card.Type__c}"/>
+                                    <ui:outputText title="Type: "
+                                                   value="{!v.card.Type__c}"/>
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Bank Name:
-                                    <ui:outputText title="Bank name: " value="{!v.card.Bank__r.Name}"/>
+                                    <ui:outputText title="Bank name: "
+                                                   value="{!v.card.Bank__r.Name}"/>
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Cash:
-                                    <ui:outputText title="Cash: " value="{!v.card.Cash__c}"/>
+                                    <ui:outputText title="Cash: "
+                                                   value="{!v.card.Cash__c}"/>
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Money to Credit:
-                                    <ui:outputText title="Cash: " value="{!v.card.MoneyInCredit__c}"/>
+                                    <ui:outputText title="Cash: "
+                                                   value="{!v.card.MoneyInCredit__c}"/>
                                 </lightning:layoutItem>
                             </div>
                         </div>
-
                     </form>
                 </lightning:layoutItem>
             </div>

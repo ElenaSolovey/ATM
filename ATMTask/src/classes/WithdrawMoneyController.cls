@@ -10,6 +10,7 @@ public with sharing class WithdrawMoneyController {
                         Id,
                         Name,
                         Bank__r.Name,
+                        Number__c,
                         Cash__c,
                         Type__c
                 FROM    Card__c
@@ -39,8 +40,9 @@ public with sharing class WithdrawMoneyController {
             return 'credit';
         }else if(card.Cash__c < finalSum && card.Type__c == 'Debit'){
             return 'debit';
+        }else {
+            return null;
         }
-        return null;
     }
     public static Cash_Machine__c minusATM(String idATM, Decimal finalSum){
         Cash_Machine__c cashMachine = [

@@ -31,6 +31,8 @@
                    alert("Not enough money on the card! You use credit money!");
                } else if (response.getReturnValue() === "debit"){
                    alert("Not enough money on the card !")
+               } else if(response.getReturnValue() === "null"){
+                   alert("Not enough money on the card with credit opportunity!")
                }
                console.log(response.getReturnValue());
            } else if( state === "ERROR"){

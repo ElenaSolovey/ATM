@@ -2,30 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="658ffc2c-a5a9-469a-9fda-9e059baabf3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATM.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/MoneyToCardScheduler.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/MoneyToCardScheduler.cls-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/triggers/CardUpdTrigger.trigger" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/triggers/CardUpdTrigger.trigger-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/ListATMTest.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/ListCardTest.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/MoneyToCardSchedulerTest.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyTest.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/New_Connection/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/New_Connection/OfflineSymbolTable.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/AtmEvent/AtmEvent.evt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/AtmEvent/AtmEvent.evt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATMController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATMController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATMHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATMHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/finalComponent/finalComponent.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/finalComponent/finalComponent.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/finalComponent/finalComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/finalComponent/finalComponentController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Card_ATM_Controller.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Card_ATM_Controller.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ListATMController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ListATMController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AppointmentControllerTest.cls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/AppointmentControllerTest.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ListATMTest.cls-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BatchHeln.cls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BatchHeln.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ListCardTest.cls-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ControllerAppointment.cls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ControllerAppointment.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/MoneyToCardSchedulerTest.cls-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/DoctorController.cls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/DoctorController.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyTest.cls-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/FutureMethodHelen.cls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/FutureMethodHelen.cls-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/PatientController.cls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/PatientController.cls-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/QuaubleTest1.cls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/QuaubleTest1.cls-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/QueuableApex.cls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/QueuableApex.cls-meta.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/WithdrawMoneyController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AddNewDoctor.page" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AddNewDoctor.page-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AddNewPatient.page" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AddNewPatient.page-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Appointment.page" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Appointment.page-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/AddPatientTrigger.trigger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/AddPatientTrigger.trigger-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/AppointmentTr.trigger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/AppointmentTr.trigger-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/ContactStatusTrigger.trigger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/ContactStatusTrigger.trigger-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/DoctorHoursWork.trigger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/DoctorHoursWork.trigger-meta.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +59,7 @@
         <option value="Lightning Style" />
         <option value="Apex Trigger" />
         <option value="Apex Class" />
+        <option value="Apex Unit Test Class" />
         <option value="Apex Metadata" />
       </list>
     </option>
@@ -68,7 +84,7 @@
         <option name="anonymousApexSettings">
           <AnonymousApexSettings>
             <option name="apexLogLevel" value="FINEST" />
-            <option name="documentText" value="MoneyToCardScheduler money = new MoneyToCardScheduler();&#10;String sch = '0 0 1 * * ?';&#10;string JobId = System.schedule('Add percent to money', sch, money);" />
+            <option name="documentText" value="" />
             <option name="splitterProportion" value="0.3896366" />
           </AnonymousApexSettings>
         </option>
@@ -79,18 +95,23 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="APEXCLASS:CARD_ATM_CONTROLLER" value="1568805041772" />
+                      <entry key="APEXCLASS:CARD_ATM_CONTROLLER" value="1568807693000" />
+                      <entry key="APEXCLASS:DATABASETEST" value="1568829346141" />
                       <entry key="APEXCLASS:EVERYDAYPERCENT" value="1568471324000" />
                       <entry key="APEXCLASS:LISTATMCONTROLLER" value="1568743346969" />
+                      <entry key="APEXCLASS:LISTATMTEST" value="1568834973000" />
+                      <entry key="APEXCLASS:LISTCARDTEST" value="1568843104577" />
                       <entry key="APEXCLASS:MONEYTOCARDSCHEDULER" value="1568804544000" />
-                      <entry key="APEXCLASS:WITHDRAWMONEYCONTROLLER" value="1568800680706" />
+                      <entry key="APEXCLASS:MONEYTOCARDSCHEDULERTEST" value="1568893731552" />
+                      <entry key="APEXCLASS:WITHDRAWMONEYCONTROLLER" value="1568883824195" />
+                      <entry key="APEXCLASS:WITHDRAWMONEYTEST" value="1568883852557" />
                       <entry key="APEXTRIGGER:CARDUPDTRIGGER" value="1568800387000" />
                       <entry key="AURADEFINITIONBUNDLE:ATM" value="1568632309000" />
                       <entry key="AURADEFINITIONBUNDLE:ATMEVENT" value="1568713825000" />
                       <entry key="AURADEFINITIONBUNDLE:CARD_ATM_COMPONENT" value="1568796085781" />
                       <entry key="AURADEFINITIONBUNDLE:FINALCOMPONENT" value="1568713826000" />
                       <entry key="AURADEFINITIONBUNDLE:LISTATM" value="1568796247020" />
-                      <entry key="AURADEFINITIONBUNDLE:WITHDRAWMONEYCOMPONENT" value="1568800667000" />
+                      <entry key="AURADEFINITIONBUNDLE:WITHDRAWMONEYCOMPONENT" value="1568891247000" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -1125,6 +1146,125 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Apex Unit Tests.ListATMTest">
+    <configuration name="ListATMTest" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="New Connection" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="ATMTask">
+            <value>
+              <set>
+                <option value="ListATMTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map />
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ListCardTest" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="New Connection" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="ATMTask">
+            <value>
+              <set>
+                <option value="ListCardTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map />
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ListCardTest.testGetCardList" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="New Connection" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="ATMTask">
+            <value>
+              <set>
+                <option value="ListCardTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map>
+          <entry key="ListCardTest">
+            <value>
+              <set>
+                <option value="testGetCardList" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Apex Unit Tests.ListATMTest" />
+        <item itemvalue="Apex Unit Tests.ListCardTest" />
+        <item itemvalue="Apex Unit Tests.ListCardTest.testGetCardList" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1142,7 +1282,7 @@
       <workItem from="1568642330400" duration="16385000" />
       <workItem from="1568708513723" duration="2800000" />
       <workItem from="1568711456465" duration="33906000" />
-      <workItem from="1568797314708" duration="6976000" />
+      <workItem from="1568797314708" duration="40215000" />
     </task>
     <servers />
   </component>
@@ -1161,5 +1301,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ATMTask$ListATMTest.null" NAME="New Connection Coverage Results" MODIFIED="1568809297156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="Apex" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" PROJECT_NAME="ATMTask" CONNECTION_NAME="New Connection" CONNECTION_TYPE="MDAPI" />
   </component>
 </project>
