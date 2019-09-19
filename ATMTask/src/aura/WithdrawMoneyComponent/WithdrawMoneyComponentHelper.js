@@ -25,20 +25,22 @@
            let state = response.getState();
             console.log(state);
            if(state === "SUCCESS"){
-               if(response.getReturnValue() === "yes"){
+               if(response.getReturnValue() == "null"){
+                   alert("You have not entered the amount!")
+               } else if(response.getReturnValue() === "yes"){
                    alert('Take your money!');
                }else if(response.getReturnValue() === "credit"){
-                   alert("Not enough money on the card! You use credit money!");
+                   alert("Take your money!");
                } else if (response.getReturnValue() === "debit"){
-                   alert("Not enough money on the card !")
-               } else if(response.getReturnValue() === "null"){
-                   alert("Not enough money on the card with credit opportunity!")
+                   alert("Not enough money on the card !");
+               } else if(response.getReturnValue() === "null" || response.getReturnValue() == null){
+                   alert("Not enough money on the card with credit opportunity!");
                }
                console.log(response.getReturnValue());
            } else if( state === "ERROR"){
+               alert("Not enough money on the card ");
                console.log(response.getReturnValue());
            }
-
         });
         $A.enqueueAction(action);
     }

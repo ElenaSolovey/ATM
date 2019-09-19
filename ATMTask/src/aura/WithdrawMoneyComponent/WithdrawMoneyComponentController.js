@@ -1,4 +1,5 @@
-({  doInit : function(component, event, helper){
+({
+    doInit : function(component, event, helper){
         helper.init(component);
     },
     closePopup: function (component, event, helper) {
@@ -10,12 +11,10 @@
         console.log(commission);
         let amountToWithdraw = component.get("v.card.Amount_to_withdraw__c");
         console.log(amountToWithdraw);
-
         let atmBank = component.get("v.atm.Bank__c");
         console.log(atmBank);
         let cardBank = component.get("v.card.Bank__c");
         console.log(cardBank);
-
         let finalSum;
         if( atmBank === cardBank){
             finalSum = parseFloat(amountToWithdraw);

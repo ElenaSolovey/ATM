@@ -4,56 +4,55 @@
     <aura:attribute name="Id" type="String"/>
     <aura:registerEvent type="c:AtmEvent" name="AtmEvent"/>
     <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
-    <lightning:layout class="slds-modal__header">
-        <lightning:layoutItem>
-            <lightning:icon iconName="standard:related_list" alternativeText="ATMs" size="medium"/>
-        </lightning:layoutItem>
-        <lightning:layoutItem padding="horizontal-small">
-            <div class="page-section page-header">
-                <h1 class="slds-text-heading--medium">Available ATMs</h1>
-            </div>
-        </lightning:layoutItem>
-    </lightning:layout>
+    <div>
+       <lightning:layout class="slds-modal__header">
+          <lightning:layoutItem>
+               <lightning:icon iconName="standard:related_list" alternativeText="ATMs" size="medium"/>
+          </lightning:layoutItem>
+          <lightning:layoutItem padding="horizontal-small">
+               <div class="page-section page-header">
+                   <h1 class="slds-text-heading--medium">Available ATMs</h1>
+               </div>
+          </lightning:layoutItem>
+       </lightning:layout>
+    </div>
     <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">
         <thead>
             <tr class="slds-text-heading_label">
-                <th scope="col">
-                    <div class="slds-truncate" title="ID">ID</div>
-                </th>
-                <th scope="col">
-                    <div class="slds-truncate" title="Name">Name</div>
-                </th>
-                <th scope="col">
-                    <div class="slds-truncate" title="Bank">Bank</div>
-                </th>
-                <th scope="col">
-                    <div class="slds-truncate" title="Bank">Amount of money</div>
-                </th>
-                <th scope="col">
-                    <div class="slds-truncate" title="Withdraw Money">Withdraw Money</div>
-                </th>
+                 <th scope="col">
+                     <div class="slds-truncate" title="Name">Name</div>
+                 </th>
+                 <th scope="col">
+                     <div class="slds-truncate" title="Bank">Bank</div>
+                 </th>
+                 <th scope="col">
+                     <div class="slds-truncate" title="Bank">Amount of money</div>
+                 </th>
+                 <th scope="col">
+                     <div class="slds-truncate" title="Withdraw Money">Withdraw Money</div>
+                 </th>
             </tr>
         </thead>
         <tbody>
-            <aura:iteration items="{!v.listATM}" var="atm">
-                    <tr>
-                        <td scope="col" title="{!atm.Id}"><div>{!atm.Id}</div></td>
-                        <td scope="col"><div title="{!atm.Name}">{!atm.Name}</div></td>
-                        <td scope="col"><div title="{!atm.Bank__r.Name}">{!atm.Bank__r.Name}</div></td>
-                        <td scope="col"><div title="{!atm.AmountOfMoney__c}">{!atm.AmountOfMoney__c}</div></td>
-                        <td>
-                            <div>
-                                <lightning:button
-                                        label = "Withdraw Money"
-                                        value = "{!atm}"
-                                        iconName = "standard:output"
-                                        variant = "neutral"
-                                        disabled = "false"
-                                        onclick = "{!c.withdrawMoney}"/>
-                            </div>
-                        </td>
-                    </tr>
-            </aura:iteration>
+             <aura:iteration items="{!v.listATM}" var="atm">
+                  <tr>
+                       <td scope="col"><div title="{!atm.Name}">{!atm.Name}</div></td>
+                       <td scope="col"><div title="{!atm.Bank__r.Name}">{!atm.Bank__r.Name}</div></td>
+                       <td scope="col"><div title="{!atm.AmountOfMoney__c}">{!atm.AmountOfMoney__c}</div></td>
+                       <td>
+                          <div>
+                              <lightning:button
+                                                label = "Withdraw Money"
+                                                value = "{!atm}"
+                                                iconName = "standard:output"
+                                                variant = "neutral"
+                                                disabled = "false"
+                                                onclick = "{!c.withdrawMoney}"/>
+                          </div>
+                       </td>
+                  </tr>
+             </aura:iteration>
         </tbody>
     </table>
+
 </aura:component>

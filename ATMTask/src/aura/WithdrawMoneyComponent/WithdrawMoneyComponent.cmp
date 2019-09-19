@@ -51,7 +51,7 @@
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Number:
-                                    <ui:outputText  value="{!v.card.Number__c}"/>
+                                    <ui:outputNumber  value="{!v.card.Number__c}"/>
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Type:
@@ -65,12 +65,12 @@
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Cash:
-                                    <ui:outputText title="Cash: "
+                                    <ui:outputCurrency
                                                    value="{!v.card.Cash__c}"/>
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
-                                    Money to Credit:
-                                    <ui:outputText title="Cash: "
+                                    Money In Credit:
+                                    <ui:outputCurrency
                                                    value="{!v.card.MoneyInCredit__c}"/>
                                 </lightning:layoutItem>
                             </div>
@@ -84,20 +84,18 @@
                              max="999999999999999"
                              type="number"
                              maxlength="18"
-                             messageWhenPatternMismatch="Please, enter the number"/>
-            <div class="buttonMoney">
+                             messageWhenPatternMismatch="Please, enter sum"/>
+            <div class="slds-modal__footer" >
                 <lightning:button
-                                   onclick="{!c.withdrawMoney}"
-                                   iconName="standard:proposition"
-                                   variant="neutral"
-                                   label="Withdraw"/>
-            </div>
-            <div class="buttonClose">
+                                       onclick="{!c.withdrawMoney}"
+                                       iconName="standard:proposition"
+                                       variant="neutral"
+                                       label="Withdraw"/>
                 <lightning:button
-                                  onclick="{!c.closePopup}"
-                                  iconName="action:remove"
-                                  variant="neutral"
-                                  label="Close"/>
+                                      onclick="{!c.closePopup}"
+                                      iconName="action:remove"
+                                      variant="neutral"
+                                      label="Close"/>
             </div>
         </div>
     </div>

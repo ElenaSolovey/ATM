@@ -2,45 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="658ffc2c-a5a9-469a-9fda-9e059baabf3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/classes/ListATMTest.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/ListCardTest.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/MoneyToCardSchedulerTest.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyTest.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/AtmEvent/AtmEvent.evt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/AtmEvent/AtmEvent.evt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATM.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATM.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AppointmentControllerTest.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/AppointmentControllerTest.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ListATMTest.cls-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BatchHeln.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/BatchHeln.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ListCardTest.cls-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ControllerAppointment.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ControllerAppointment.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/MoneyToCardSchedulerTest.cls-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/DoctorController.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/DoctorController.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyTest.cls-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/FutureMethodHelen.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/FutureMethodHelen.cls-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/PatientController.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/PatientController.cls-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/QuaubleTest1.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/QuaubleTest1.cls-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/QueuableApex.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/QueuableApex.cls-meta.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/WithdrawMoneyController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AddNewDoctor.page" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AddNewDoctor.page-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AddNewPatient.page" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AddNewPatient.page-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Appointment.page" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Appointment.page-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/AddPatientTrigger.trigger" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/AddPatientTrigger.trigger-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/AppointmentTr.trigger" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/AppointmentTr.trigger-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/ContactStatusTrigger.trigger" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/ContactStatusTrigger.trigger-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/DoctorHoursWork.trigger" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/DoctorHoursWork.trigger-meta.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,16 +74,16 @@
                       <entry key="APEXCLASS:LISTATMTEST" value="1568834973000" />
                       <entry key="APEXCLASS:LISTCARDTEST" value="1568843104577" />
                       <entry key="APEXCLASS:MONEYTOCARDSCHEDULER" value="1568804544000" />
-                      <entry key="APEXCLASS:MONEYTOCARDSCHEDULERTEST" value="1568893731552" />
-                      <entry key="APEXCLASS:WITHDRAWMONEYCONTROLLER" value="1568883824195" />
+                      <entry key="APEXCLASS:MONEYTOCARDSCHEDULERTEST" value="1568894426481" />
+                      <entry key="APEXCLASS:WITHDRAWMONEYCONTROLLER" value="1568903892000" />
                       <entry key="APEXCLASS:WITHDRAWMONEYTEST" value="1568883852557" />
                       <entry key="APEXTRIGGER:CARDUPDTRIGGER" value="1568800387000" />
                       <entry key="AURADEFINITIONBUNDLE:ATM" value="1568632309000" />
                       <entry key="AURADEFINITIONBUNDLE:ATMEVENT" value="1568713825000" />
-                      <entry key="AURADEFINITIONBUNDLE:CARD_ATM_COMPONENT" value="1568796085781" />
+                      <entry key="AURADEFINITIONBUNDLE:CARD_ATM_COMPONENT" value="1568902175000" />
                       <entry key="AURADEFINITIONBUNDLE:FINALCOMPONENT" value="1568713826000" />
-                      <entry key="AURADEFINITIONBUNDLE:LISTATM" value="1568796247020" />
-                      <entry key="AURADEFINITIONBUNDLE:WITHDRAWMONEYCOMPONENT" value="1568891247000" />
+                      <entry key="AURADEFINITIONBUNDLE:LISTATM" value="1568901925772" />
+                      <entry key="AURADEFINITIONBUNDLE:WITHDRAWMONEYCOMPONENT" value="1568903892000" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -1282,7 +1254,7 @@
       <workItem from="1568642330400" duration="16385000" />
       <workItem from="1568708513723" duration="2800000" />
       <workItem from="1568711456465" duration="33906000" />
-      <workItem from="1568797314708" duration="40215000" />
+      <workItem from="1568797314708" duration="49453000" />
     </task>
     <servers />
   </component>

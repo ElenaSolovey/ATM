@@ -12,7 +12,8 @@ public with sharing class WithdrawMoneyController {
                         Bank__r.Name,
                         Number__c,
                         Cash__c,
-                        Type__c
+                        Type__c,
+                        MoneyInCredit__c
                 FROM    Card__c
                 WHERE   Id = :cardId
         ];
@@ -27,12 +28,14 @@ public with sharing class WithdrawMoneyController {
                 FROM   Card__c
                 WHERE  Id =: idCard
         ];
-        if(card.Cash__c >= finalSum){
+        if (finalSum == null){
+            return 'null';
+        } else if(card.Cash__c >= finalSum){
             card.Cash__c -= finalSum;
             update card;
             minusATM(idATM, finalSum);
             return 'yes';
-        }else if(card.Cash__c < finalSum && card.Type__c == 'Credit'){
+        }else if(card.Cash__c < finalSum && card.Cash__c + card.MoneyInCredit__c > finalSum && card.Type__c == 'Credit'){
             card.Cash__c = card.Cash__c + card.MoneyInCredit__c;
             card.Cash__c -= finalSum;
             update card;

@@ -3,18 +3,19 @@
     <aura:attribute name="atm" type="Cash_Machine__c" default="{'sobjectType': 'Cash_Machine__c'}"/>
 
     <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
-
-    <lightning:layout class="slds-modal__header">
-        <lightning:layoutItem>
-            <lightning:icon iconName="standard:user" alternativeText="My CARDS"/>
-        </lightning:layoutItem>
-        <lightning:layoutItem padding="horizontal-small">
-            <div class="page-section page-header">
-                <h1 class="slds-text-heading--label">Cards</h1>
-                <h2 class="slds-text-heading--medium">My Cards</h2>
-            </div>
-        </lightning:layoutItem>
-    </lightning:layout>
+    <div>
+        <lightning:layout class="slds-modal__header">
+            <lightning:layoutItem>
+                <lightning:icon iconName="standard:user" alternativeText="My CARDS"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="horizontal-small">
+                <div class="page-section page-header">
+                    <h1 class="slds-text-heading--label">Cards</h1>
+                    <h2 class="slds-text-heading--medium">My Cards</h2>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
     <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout" id="table">
         <thead>
             <tr class="slds-text-heading_label">

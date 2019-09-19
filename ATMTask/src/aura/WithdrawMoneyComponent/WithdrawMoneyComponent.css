@@ -19,25 +19,13 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
-.THIS .buttonMoney{
-    position: center;
-    align-self: center;
-    padding: 30px;
-    margin-left: 138px;
-    margin-bottom: 30px;
-}
-.THIS .buttonClose{
-    position: center;
-    align-self: center;
-    padding: 20px;
-    margin-left: 155px;
-    margin-top: 120px;
-    margin-bottom: 30px;
+.THIS .slds-modal__footer{
+    background-color: beige;
 }
 .THIS #atm{
-    background-color: aquamarine;
+    background-color: skyblue;
     margin-bottom: 10px;
 }
 .THIS #card{
-    background-color: mistyrose;
+    background-color: beige;
 }
