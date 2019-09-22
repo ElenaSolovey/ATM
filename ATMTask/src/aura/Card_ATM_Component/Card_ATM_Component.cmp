@@ -1,8 +1,8 @@
 <aura:component description="Card_ATM_Component" controller="Card_ATM_Controller" implements="flexipage:availableForAllPageTypes">
     <aura:attribute name="cards" type="Card__c[]"/>
     <aura:attribute name="atm" type="Cash_Machine__c" default="{'sobjectType': 'Cash_Machine__c'}"/>
-
-    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+    <aura:handler name="CloseEvent" event="c:CloseEvent" action="{!c.doInit}" />
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}"/>
     <div>
         <lightning:layout class="slds-modal__header">
             <lightning:layoutItem>
@@ -46,7 +46,7 @@
                     <td scope="col"><div title="{!card.Type__c}">{!card.Type__c}</div></td>
                     <td scope="col"><div title="{!card.Number__c}">{!card.Number__c}</div></td>
                     <td scope="col"><div title="{!card.Bank__r.Name}">{!card.Bank__r.Name}</div></td>
-                    <td scope="col"><div title="{!card.Cash__c}">{!card.Cash__c}</div></td>
+                    <td scope="col"><div title="{!card.Cash__c}"><ui:outputCurrency value="{!card.Cash__c}"/></div></td>
                     <td>
                         <div>
                             <lightning:button
@@ -62,6 +62,7 @@
             </aura:iteration>
         </tbody>
     </table>
+    <lightning:button name="Back" type="button" onclick="{!c.back}" label="Back"/>
     <div aura:id="WithdrawMoneyComponent"
          class="WithdrawMoneyComponent"/>
 </aura:component>

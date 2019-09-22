@@ -3,6 +3,9 @@
     <aura:attribute name="ATMId" type="String"/>
     <aura:attribute name="card" type="Card__c" default="{'sobjectType': 'Card__c'}"/>
     <aura:attribute name="atm" type="Cash_Machine__c" default="{'sobjectType': 'Cash_Machine__c'}"/>
+    <aura:attribute name="Visible" type="Boolean" default="true"/>
+    <aura:registerEvent name="CloseEvent" type="c:CloseEvent" />
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
     <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
     <div class="back-ground">
         <div class="form-to-popup">
@@ -41,7 +44,6 @@
                                 </lightning:layoutItem>
                             </div>
                         </div>
-
                         <div class="slds-box slds-text-heading_small" id="card">
                              Info about Card:
                             <div>
@@ -51,7 +53,7 @@
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Number:
-                                    <ui:outputNumber  value="{!v.card.Number__c}"/>
+                                    <ui:outputText  value="{!v.card.Number__c}"/>
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Type:
@@ -65,20 +67,21 @@
                                 </lightning:layoutItem>
                                 <lightning:layoutItem >
                                     Cash:
-                                    <ui:outputCurrency
-                                                   value="{!v.card.Cash__c}"/>
+                                    <ui:outputCurrency value="{!v.card.Cash__c}"/>
                                 </lightning:layoutItem>
-                                <lightning:layoutItem >
-                                    Money In Credit:
-                                    <ui:outputCurrency
-                                                   value="{!v.card.MoneyInCredit__c}"/>
-                                </lightning:layoutItem>
+                                <aura:if isTrue="{!v.Visible}">
+                                    <lightning:layoutItem >
+                                        Money In Credit:
+                                        <ui:outputCurrency
+                                                       value="{!v.card.MoneyInCredit__c}"/>
+                                    </lightning:layoutItem>
+                                </aura:if>
                             </div>
                         </div>
                     </form>
                 </lightning:layoutItem>
             </div>
-            <lightning:input label="Amount"
+            <lightning:input label="Amount" step="0.0001"
                              value="{!v.card.Amount_to_withdraw__c}"
                              min="0"
                              max="999999999999999"

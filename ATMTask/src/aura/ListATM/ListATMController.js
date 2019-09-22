@@ -1,7 +1,3 @@
-/**
- * Created by user on 15-Sep-19.
- */
-
 ({
     doInit : function(component, event, helper){
         helper.init(component);
@@ -13,5 +9,4 @@
             helper.withdrawMoney(component, atm);
         }
     },
-
 });

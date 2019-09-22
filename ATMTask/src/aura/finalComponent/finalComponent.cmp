@@ -1,10 +1,13 @@
 <aura:component description="finalComponent">
     <aura:handler event="c:AtmEvent" action="{!c.handlerATM}"/>
-<!--    <aura:attribute name="Id" type="String"/>-->
+    <aura:handler event="c:BackEvent" action="{!c.handlerBack}"/>
     <aura:attribute name="atm" type="Cash_Machine__c"/>
-    <aura:attribute type="Boolean" name="flagSelectATM" default="false"/>
+    <aura:attribute type="Boolean" name="comp2" default="false"/>
+    <aura:attribute name="comp1" type="Boolean" default="true"/>
+    <aura:if isTrue="{!v.comp1}">
     <c:ListATM />
-    <aura:if isTrue="{!v.flagSelectATM}">
+    </aura:if>
+    <aura:if isTrue="{!v.comp2}">
         <c:Card_ATM_Component  atm="{!v.atm}"/>
     </aura:if>
 </aura:component>

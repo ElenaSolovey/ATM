@@ -3,5 +3,8 @@
  */
 
 .THIS .slds-modal__header{
-    background-color: skyblue;
+    background-color:darkturquoise;
+}
+.THIS #head{
+    position: center;
 }

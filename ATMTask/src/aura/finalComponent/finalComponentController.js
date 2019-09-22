@@ -4,12 +4,15 @@
 
 ({
     handlerATM: function(component, event, helper) {
-        // component.set("v.Id", event.getParam("AtmId"));
         component.set("v.atm", event.getParam("atm"));
-        component.set("v.flagSelectATM", true);
+        component.set("v.comp2", true);
+        component.set("v.comp1", false);
         // console.log('Id ATM перед переходе на вторую',event.getParam("AtmId"));
         console.log(event.getParam("atm"));
-        console.log("xorosho");
     },
+    handlerBack : function (component) {
+        component.set("v.comp2", false);
+        component.set("v.comp1", true);
+    }
 
 });

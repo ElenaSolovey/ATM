@@ -1,4 +1,3 @@
-
 <aura:component description="ListATM" controller="ListATMController" implements="flexipage:availableForAllPageTypes">
     <aura:attribute name="listATM" type="Cash_Machine__c[]"/>
     <aura:attribute name="Id" type="String"/>
@@ -38,7 +37,7 @@
                   <tr>
                        <td scope="col"><div title="{!atm.Name}">{!atm.Name}</div></td>
                        <td scope="col"><div title="{!atm.Bank__r.Name}">{!atm.Bank__r.Name}</div></td>
-                       <td scope="col"><div title="{!atm.AmountOfMoney__c}">{!atm.AmountOfMoney__c}</div></td>
+                       <td scope="col"><div title="{!atm.AmountOfMoney__c}"><ui:outputCurrency  value="{!atm.AmountOfMoney__c}"/></div></td>
                        <td>
                           <div>
                               <lightning:button
@@ -54,5 +53,4 @@
              </aura:iteration>
         </tbody>
     </table>
-
 </aura:component>

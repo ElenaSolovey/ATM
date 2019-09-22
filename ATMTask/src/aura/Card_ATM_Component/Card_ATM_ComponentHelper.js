@@ -8,16 +8,15 @@
     },
     openCard: function (component, cardId) {
         console.log(cardId);
-        console.log(JSON.stringify(component.get('v.atm')));
+        console.log(JSON.stringify(component.get("v.atm")));
         $A.createComponent(
             "c:WithdrawMoneyComponent",
             {
                 'CardId' : cardId,
-                'atm' : component.get('v.atm')
-                // 'ATMId' : component.get("v.atmId")
+                'atm' : component.get("v.atm")
             },
             function(newComponent, status, errorMessage){
-                console.log('status:', status);
+                console.log("status:", status);
                 if (status === "SUCCESS") {
                     var body = component.find("WithdrawMoneyComponent");
                     body.set("v.body", newComponent);
@@ -30,5 +29,12 @@
                 }
             }
         );
+    },
+    back : function(component, event, helper){
+        let visible = true;
+        let createEvent = $A.get("e.c:BackEvent");
+        createEvent.setParams({ "visible" : visible});
+        createEvent.fire();
+        component.destroy();
     }
 });

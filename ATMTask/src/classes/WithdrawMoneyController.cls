@@ -35,9 +35,14 @@ public with sharing class WithdrawMoneyController {
             update card;
             minusATM(idATM, finalSum);
             return 'yes';
-        }else if(card.Cash__c < finalSum && card.Cash__c + card.MoneyInCredit__c > finalSum && card.Type__c == 'Credit'){
-            card.Cash__c = card.Cash__c + card.MoneyInCredit__c;
-            card.Cash__c -= finalSum;
+        }else if(card.Cash__c < finalSum && (card.Cash__c + card.MoneyInCredit__c > finalSum || card.MoneyInCredit__c>finalSum) && card.Type__c == 'Credit'){
+            if (card.Cash__c > 0) {
+                card.MoneyInCredit__c = card.MoneyInCredit__c - (finalSum - card.Cash__c);
+                card.Cash__c -= finalSum;
+            } else {
+                card.MoneyInCredit__c -= finalSum;
+                card.Cash__c -= finalSum;
+            }
             update card;
             minusATM(idATM, finalSum);
             return 'credit';

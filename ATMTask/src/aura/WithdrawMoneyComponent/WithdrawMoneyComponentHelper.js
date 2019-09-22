@@ -9,6 +9,10 @@
         action.setCallback(this, function (response) {
             component.set("v.card", response.getReturnValue());
             console.log(response.getReturnValue());
+            if(component.get("v.card.Type__c") === "Debit"){
+                let visible = false;
+                component.set("v.Visible", visible);
+            }
         });
         $A.enqueueAction(action);
     },
@@ -25,7 +29,7 @@
            let state = response.getState();
             console.log(state);
            if(state === "SUCCESS"){
-               if(response.getReturnValue() == "null"){
+               if(response.getReturnValue() === "null"){
                    alert("You have not entered the amount!")
                } else if(response.getReturnValue() === "yes"){
                    alert('Take your money!');
@@ -36,12 +40,17 @@
                } else if(response.getReturnValue() === "null" || response.getReturnValue() == null){
                    alert("Not enough money on the card with credit opportunity!");
                }
-               console.log(response.getReturnValue());
+                $A.get('e.force:refreshView').fire();
            } else if( state === "ERROR"){
                alert("Not enough money on the card ");
                console.log(response.getReturnValue());
            }
         });
         $A.enqueueAction(action);
+    },
+    closePopup :function (component) {
+        var myEvent = component.getEvent("CloseEvent");
+        myEvent.fire();
+        component.destroy();
     }
 });

@@ -81,6 +81,27 @@ private class WithdrawMoneyTest {
         insert card2;
         result = WithdrawMoneyController.minusCard(card2.Id,finalSum,atm.Id);
         System.assert(result == 'credit');
-
+        //-----------------null
+        finalSum = 250;
+        result = WithdrawMoneyController.minusCard(card2.Id,finalSum,atm.Id);
+        System.assert(result == null);
+        //-----------------
+        finalSum = 50;
+        Card__c card3 = new Card__c(
+                Name = 'Name' ,
+                AccountId__c = account.Id,
+                Number__c = '1234567891234567',
+                MoneyInCredit__c = 100,
+                Cash__c = -10,
+                Type__c = 'Credit',
+                Bank__c = bank.Id
+        );
+        insert card3;
+        result = WithdrawMoneyController.minusCard(card3.Id,finalSum,atm.Id);
+        System.assert(result == 'credit');
+        //-------------------"null"
+        finalSum = null;
+        result = WithdrawMoneyController.minusCard(card3.Id,finalSum,atm.Id);
+        System.assert(result == 'null');
     }
 }

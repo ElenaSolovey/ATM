@@ -3,8 +3,11 @@
         helper.init(component);
     },
     closePopup: function (component, event, helper) {
-        component.destroy();
+        helper.closePopup(component);
     },
+    // isRefreshed: function(component, event, helper) {
+    //         helper.init(component);
+    // },
     withdrawMoney: function (component, event, helper) {
         let moneyATM = component.get("v.atm.AmountOfMoney__c");
         let commission = component.get("v.atm.Bank__r.Commission__c");

@@ -1,7 +1,3 @@
-/**
- * Created by user on 15-Sep-19.
- */
-
 ({
     init : function(component, event, helper) {
         var action = component.get("c.getAtmList");
@@ -12,7 +8,7 @@
     },
     withdrawMoney: function (component, atm) {
         console.log('atm', atm);
-        let createEvent = $A.get("e.c:AtmEvent");
+        var createEvent = $A.get("e.c:AtmEvent");
         createEvent.setParams({ "atm" : atm});
         createEvent.fire();
         component.destroy();

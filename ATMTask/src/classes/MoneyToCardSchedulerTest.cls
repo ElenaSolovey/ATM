@@ -4,7 +4,7 @@
 
 @IsTest
 private class MoneyToCardSchedulerTest {
-    public static String str = '0 0 0 20 9 ? 2019';
+    public static String str = '0 0 0 23 9 ? 2019';
     public static testMethod void ScheduledJobTest() {
         Account account = new Account(Name = 'Alena');
         insert account;
@@ -30,7 +30,7 @@ private class MoneyToCardSchedulerTest {
                 WHERE   Id =: jobId
         ];
         System.assertEquals(0, ct.TimesTriggered);
-        System.assertEquals('2019-09-20 00:00:00', String.valueOf(ct.NextFireTime));
+        System.assertEquals('2019-09-23 00:00:00', String.valueOf(ct.NextFireTime));
         Test.stopTest();
     }
 }
