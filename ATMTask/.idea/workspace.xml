@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="658ffc2c-a5a9-469a-9fda-9e059baabf3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aura/BackEvent/BackEvent.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/BackEvent/BackEvent.evt-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/CloseEvent/CloseEvent.evt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aura/CloseEvent/CloseEvent.evt-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TestFactory.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TestFactory.cls-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/AtmEvent/AtmEvent.evt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/AtmEvent/AtmEvent.evt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_Component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/Card_ATM_Component/Card_ATM_ComponentHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATM.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATMController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATMController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/ListATM/ListATMHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/ListATM/ListATMHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponent.cmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/WithdrawMoneyComponent/WithdrawMoneyComponentHelper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/finalComponent/finalComponent.cmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/finalComponent/finalComponent.cmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aura/finalComponent/finalComponentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/aura/finalComponent/finalComponentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ListATMTest.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ListATMTest.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ListCardTest.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ListCardTest.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/MoneyToCardSchedulerTest.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/MoneyToCardSchedulerTest.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/WithdrawMoneyController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyController.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/WithdrawMoneyTest.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/WithdrawMoneyTest.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/triggers/CardUpdTrigger.trigger" beforeDir="false" afterPath="$PROJECT_DIR$/src/triggers/CardUpdTrigger.trigger" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +28,8 @@
         <option value="Lightning Style" />
         <option value="Apex Trigger" />
         <option value="Apex Class" />
-        <option value="Apex Unit Test Class" />
         <option value="Lightning Application Event" />
+        <option value="Apex Unit Test Class" />
         <option value="Apex Metadata" />
       </list>
     </option>
@@ -82,12 +69,13 @@
                       <entry key="APEXCLASS:DATABASETEST" value="1568829346141" />
                       <entry key="APEXCLASS:EVERYDAYPERCENT" value="1568471324000" />
                       <entry key="APEXCLASS:LISTATMCONTROLLER" value="1568743346969" />
-                      <entry key="APEXCLASS:LISTATMTEST" value="1568834973000" />
-                      <entry key="APEXCLASS:LISTCARDTEST" value="1568843104577" />
+                      <entry key="APEXCLASS:LISTATMTEST" value="1569235296515" />
+                      <entry key="APEXCLASS:LISTCARDTEST" value="1569233386106" />
                       <entry key="APEXCLASS:MONEYTOCARDSCHEDULER" value="1568804544000" />
-                      <entry key="APEXCLASS:MONEYTOCARDSCHEDULERTEST" value="1569184049348" />
-                      <entry key="APEXCLASS:WITHDRAWMONEYCONTROLLER" value="1569182939735" />
-                      <entry key="APEXCLASS:WITHDRAWMONEYTEST" value="1569184891490" />
+                      <entry key="APEXCLASS:MONEYTOCARDSCHEDULERTEST" value="1569235520723" />
+                      <entry key="APEXCLASS:TESTFACTORY" value="1569235127694" />
+                      <entry key="APEXCLASS:WITHDRAWMONEYCONTROLLER" value="1569231108000" />
+                      <entry key="APEXCLASS:WITHDRAWMONEYTEST" value="1569235520723" />
                       <entry key="APEXTRIGGER:CARDUPDTRIGGER" value="1569184143381" />
                       <entry key="AURADEFINITIONBUNDLE:ATM" value="1569176274000" />
                       <entry key="AURADEFINITIONBUNDLE:ATMEVENT" value="1569173738616" />
@@ -97,7 +85,7 @@
                       <entry key="AURADEFINITIONBUNDLE:FINALCOMPONENT" value="1569176576000" />
                       <entry key="AURADEFINITIONBUNDLE:LISTATM" value="1569176577000" />
                       <entry key="AURADEFINITIONBUNDLE:MONEYEVENT" value="1568989242000" />
-                      <entry key="AURADEFINITIONBUNDLE:WITHDRAWMONEYCOMPONENT" value="1569178034538" />
+                      <entry key="AURADEFINITIONBUNDLE:WITHDRAWMONEYCOMPONENT" value="1569231209190" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -1269,7 +1257,7 @@
       <workItem from="1568708513723" duration="2800000" />
       <workItem from="1568711456465" duration="33906000" />
       <workItem from="1568797314708" duration="74863000" />
-      <workItem from="1569061875559" duration="11938000" />
+      <workItem from="1569061875559" duration="18702000" />
     </task>
     <servers />
   </component>

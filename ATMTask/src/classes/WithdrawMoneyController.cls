@@ -20,14 +20,7 @@ public with sharing class WithdrawMoneyController {
     }
     @AuraEnabled
     public static String minusCard(String idCard, Decimal finalSum, String idATM){
-        Card__c card = [
-                SELECT
-                       MoneyInCredit__c,
-                       Type__c,
-                       Cash__c
-                FROM   Card__c
-                WHERE  Id =: idCard
-        ];
+        Card__c card = getCardById(idCard);
         if (finalSum == null){
             return 'null';
         } else if(card.Cash__c >= finalSum){
